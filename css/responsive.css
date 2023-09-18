@@ -36,7 +36,7 @@
 @media (min-width: 951px) {
 	.hero {
 		background-size: 75vmin;
-		background-image: url(../assets/kobo-kanaeru.png);
+		background-image: url(../assets/hero-image.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		margin-top: 0;
