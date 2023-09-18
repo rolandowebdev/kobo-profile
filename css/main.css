@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+	--ff-primary: 'Plus Jakarta Sans', sans-serif;
+	--primary-color: #7eb7d7;
+	--secondary-color: #3c6994;
+	--dark-color: #292b33;
+	--background-color: #f9fafb;
+
+	--youtube-color: #ff0000;
+	--twitter-color: #1da1f2;
+	--instagram-color: #e4405f;
+	--tiktok-color: #000000;
+	--facebook-color: #1877f2;
+}
+
+/* additional class */
+
+.fa-brands {
+	font-size: 18px;
+	transition: 0.2s ease-in-out;
+}
+
+.fa-youtube:hover {
+	color: var(--youtube-color);
+}
+
+.fa-twitter:hover {
+	color: var(--twitter-color);
+}
+
+.fa-instagram:hover {
+	color: var(--instagram-color);
+}
+
+.fa-tiktok:hover {
+	color: var(--tiktok-color);
+}
+
+.fa-facebook:hover {
+	color: var(--facebook-color);
+}
+
+.btn-primary {
+	width: fit-content;
+	padding: 0.5rem 1rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	border: none;
+	border-radius: 0.25rem;
+	transition-duration: 300ms;
+}
+
+.btn-primary:hover {
+	background-color: var(--secondary-color);
+}
+
+/* header */
+
+.header {
+	top: 0;
+	position: sticky;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	background-color: var(--background-color) / 0.2;
+	--webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	z-index: 99;
+}
+
+.header .navbar {
+	width: 100%;
+	max-width: 68rem;
+	margin-inline: auto;
+	min-height: 72px;
+	padding-inline: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	font-weight: 800;
+	transition: 0.25s ease-in-out;
+}
+
+.logo:hover {
+	color: var(--primary-color);
+}
+
+.header .navbar .nav-menu,
+.header .navbar .social-list {
+	display: none;
+}
+
+/* mobile menu */
+
+.blur {
+	inset: 0;
+	position: fixed;
+	background-color: var(--background-color);
+	background-color: var(--background-color) / 0.2;
+	--webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+}
+
+.blur.show {
+	opacity: 1;
+}
+
+.mobile-menu-container {
+	top: 45%;
+	left: 50%;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	max-width: 300px;
+	width: 80%;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 0.5rem;
+	background-color: var(--background-color);
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+}
+
+.mobile-menu-container.show {
+	top: 50%;
+	opacity: 1;
+}
+
+.mobile-menu-container .mobile-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.mobile-menu-container .social-mobile {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+/* hamburger menu */
+
+.hamburger {
+	display: block;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 4px 7px;
+	transition: 0.4s ease-in-out;
+}
+
+.hamburger:hover {
+	background-color: var(--light-hover);
+}
+
+.hamburger .bar {
+	display: block;
+	width: 23px;
+	height: 3px;
+	border-radius: 100vw;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--dark-color);
+}
+
+.hamburger.active .bar:first-child {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active .bar:last-child {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+/* hero */
+
+.hero {
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: calc(100vh - 72px);
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.hero a {
+	margin-top: 1rem;
+	margin-inline: auto;
+	font-size: 1rem;
+}
+
+.hero .hero-quotes {
+	display: flex;
+	flex-direction: row;
+}
+
+.hero-quotes .quote {
+	display: flex;
+	flex-direction: column;
+	gap: 0.875rem;
+	font-size: 0.875rem;
+	font-style: italic;
+}
+
+.hero-quotes .quote span {
+	font-weight: 800;
+	font-style: normal;
+}
+
+.hero-intro .hero-title {
+	font-size: 64px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hero-intro .hero-description,
+.hero-quotes p {
+	font-size: 1rem;
+	line-height: 28px;
+	text-align: center;
+}
+
+.hero-intro,
+.hero-quotes {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}

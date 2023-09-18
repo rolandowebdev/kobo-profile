@@ -1,0 +1,62 @@
+html {
+	font-size: 16px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+br {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: var(--dark-color);
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+button {
+	font-family: inherit;
+	cursor: pointer;
+}
+
+body {
+	font-family: var(--ff-primary);
+	background-color: var(--background-color);
+	color: var(--dark-color);
+}
+
+main {
+	width: 100%;
+	max-width: 68rem;
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+}
