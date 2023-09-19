@@ -10,7 +10,7 @@ const SKINS_NAME = {
 
 const switchSkins = (skinName) => {
 	const image = document.getElementById('skins-image')
-	const skinsWrapper = document.querySelector('.skins-wrapper')
+	const skinsWrapper = document.querySelector('.skins-image-wrapper')
 
 	skinsWrapper.style.opacity = 0
 
