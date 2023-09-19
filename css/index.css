@@ -11,6 +11,7 @@ html {
 }
 
 body,
+button,
 h1,
 h2,
 h3,
@@ -40,11 +41,23 @@ a {
 	color: var(--dark-color);
 	text-decoration: none;
 	font-weight: 600;
-	cursor: pointer;
 }
 
 button {
-	font-family: inherit;
+	border: none;
+	width: auto;
+	overflow: visible;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+}
+
+button,
+a {
+	text-align: inherit;
 	cursor: pointer;
 }
 
@@ -55,8 +68,12 @@ body {
 }
 
 main {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
 	width: 100%;
 	max-width: 68rem;
 	margin-inline: auto;
 	padding-inline: 1.5rem;
+	z-index: 9;
 }
