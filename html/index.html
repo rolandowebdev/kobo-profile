@@ -21,7 +21,7 @@
 				<li class="nav-item"><a class="nav-link" href="#">Skins</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
 				<li class="nav-item"><a class="nav-link" href="#">Music</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Data</a></li>
 			</ul>
 
 			<hr />
@@ -63,10 +63,10 @@
 				</a>
 
 				<ul class="nav-menu">
-					<li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Skins</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Data</a></li>
 				</ul>
 
 				<ul class="social-list">
@@ -133,7 +133,7 @@
 				</div>
 			</article>
 
-			<div class="stats">
+			<!-- <div class="stats">
 				<div class="stats-container">
 					<div class="stats-item">
 						<h3 class="stats-count">2.3M</h3>
@@ -156,27 +156,51 @@
 						<p class="stats-category">Tiktok</p>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
-			<article class="skins">
+			<section class="skins">
 				<h2 class="section-title">Skins</h2>
-				<div class="skins-container">
-					<div class="skins-switcher">
-						<button class="btn-switcher" onclick="switchSkins('ORIGINAL')">
-							<img src="../assets/button/original.png" alt="Original Button" />
-						</button>
-						<button class="btn-switcher" onclick="switchSkins('KIMONO')">
-							<img src="../assets/button/kimono.png" alt="Kimono Button" />
-						</button>
-						<button class="btn-switcher" onclick="switchSkins('BATIK')">
-							<img src="../assets/button/batik.png" alt="Batik Button" />
-						</button>
+				<article class="skins-container">
+					<div class="skins-wrapper">
+						<div class="skins-switcher">
+							<button class="btn-switcher" onclick="switchSkins('ORIGINAL')">
+								<img
+									src="../assets/button/original.png"
+									alt="Original Button" />
+							</button>
+							<button class="btn-switcher" onclick="switchSkins('KIMONO')">
+								<img src="../assets/button/kimono.png" alt="Kimono Button" />
+							</button>
+							<button class="btn-switcher" onclick="switchSkins('BATIK')">
+								<img src="../assets/button/batik.png" alt="Batik Button" />
+							</button>
+						</div>
+
+						<div class="skins-image-wrapper">
+							<img id="skins-image" src="../assets/skins/original.png" alt="" />
+						</div>
 					</div>
-					<div class="skins-image-wrapper">
-						<img id="skins-image" src="../assets/skins/original.png" alt="" />
+
+					<div class="skins-info-wrapper">
+						<h2 class="skins-info-title">
+							Kobo Kanaeru
+							<span>こぼ・かなえる</span>
+						</h2>
+						<p class="skins-info-description">
+							A carefree girl who lives in the topmost room of a lighthouse, she
+							is actually the bloodline of the strongest rain shaman in the
+							area. She has great potential to control rain, but she does not
+							like to do it as a task.
+							<br />
+							<br />
+							In order to win back her Rain Master title, she needs to prove to
+							her family that she can keep their rain shaman service afloat. Not
+							only does she have to train daily, but she also needs to adopt
+							some sort of virtual marketing strategy to succeed!
+						</p>
 					</div>
-				</div>
-			</article>
+				</article>
+			</section>
 
 			<section>
 				<aside></aside>
