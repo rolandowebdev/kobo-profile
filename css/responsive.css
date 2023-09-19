@@ -9,20 +9,6 @@
 	.hero-intro .hero-title {
 		font-size: 58px;
 	}
-
-	.skins-info .skins-info-list {
-		text-align: inherit;
-	}
-
-	.skins-info-list .skins-info-item {
-		flex-direction: row;
-		align-items: center;
-		gap: 1rem;
-	}
-
-	.skins-info-text {
-		flex-shrink: 3;
-	}
 }
 
 @media (min-width: 643px) {
@@ -51,7 +37,7 @@
 		gap: 2rem;
 	}
 
-	.skins-container .skins-wrapper {
+	.skins-container .skins-image-wrapper {
 		height: 500px;
 	}
 }
@@ -129,7 +115,7 @@
 		flex-direction: column;
 	}
 
-	.skins-container .skins-wrapper {
+	.skins-container .skins-image-wrapper {
 		height: 600px;
 	}
 }
