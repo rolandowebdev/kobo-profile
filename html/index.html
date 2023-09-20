@@ -4,9 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kobo Kanaeru</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/responsive.css" />
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+			defer></script>
 		<script
 			src="https://kit.fontawesome.com/703ffa6e35.js"
 			crossorigin="anonymous"
@@ -210,37 +217,8 @@
 
 			<section id="music" class="music">
 				<h2 class="section-title">Music</h2>
-				<div class="music-container">
-					<div class="music-slider-item">
-						<div class="music-category">
-							<p class="music-category-item">Single</p>
-							<p class="music-category-item">Original</p>
-						</div>
-						<div class="music-description">
-							<h3 class="music-title">Mantra Hujan</h3>
-							<p class="music-release-date">12 May 2022</p>
-						</div>
-					</div>
-					<div class="music-slider-item">
-						<div class="music-category">
-							<p class="music-category-item">Single</p>
-							<p class="music-category-item">Original</p>
-						</div>
-						<div class="music-description">
-							<h3 class="music-title">Mantra Hujan</h3>
-							<p class="music-release-date">12 May 2022</p>
-						</div>
-					</div>
-					<div class="music-slider-item">
-						<div class="music-category">
-							<p class="music-category-item">Single</p>
-							<p class="music-category-item">Original</p>
-						</div>
-						<div class="music-description">
-							<h3 class="music-title">Mantra Hujan</h3>
-							<p class="music-release-date">12 May 2022</p>
-						</div>
-					</div>
+				<div class="swiper music-container">
+					<div id="swiper-wrapper" class="swiper-wrapper"></div>
 				</div>
 			</section>
 
@@ -255,5 +233,23 @@
 		</main>
 
 		<footer></footer>
+		<script type="module">
+			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+			const swiper = new Swiper('.music-container', {
+				speed: 800,
+				autoHeigth: true,
+				slidesPerView: 1,
+				spaceBetween: 20,
+				breakpoints: {
+					840: {
+						slidesPerView: 2
+					},
+					1120: {
+						slidesPerView: 3
+					}
+				}
+			})
+		</script>
 	</body>
 </html>
