@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kobo Kanaeru</title>
-		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/responsive.css" />
 		<script
 			src="https://kit.fontawesome.com/703ffa6e35.js"
@@ -18,10 +18,10 @@
 
 		<div class="mobile-menu-container">
 			<ul class="mobile-menu">
-				<li class="nav-item"><a class="nav-link" href="#">Skins</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Music</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Data</a></li>
+				<li class="nav-item"><a class="nav-link" href="#skins">Skins</a></li>
+				<li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
+				<li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+				<li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
 			</ul>
 
 			<hr />
@@ -57,16 +57,18 @@
 
 		<header class="header">
 			<nav class="navbar max-w-6xl">
-				<a href="#" class="logo">
+				<a href="#hero" class="logo">
 					<img src="../assets/icon.png" width="38" height="38" alt="" />
 					<span>こぼ・かなえる</span>
 				</a>
 
 				<ul class="nav-menu">
-					<li class="nav-item"><a class="nav-link" href="#">Skins</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Music</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Data</a></li>
+					<li class="nav-item"><a class="nav-link" href="#skins">Skins</a></li>
+					<li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="#videos">Videos</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
 				</ul>
 
 				<ul class="social-list">
@@ -106,16 +108,17 @@
 		</header>
 
 		<main>
-			<article class="hero">
+			<article id="hero" class="hero">
 				<div class="hero-intro">
 					<h1 class="hero-title">
 						Hi I'm <br />
 						Kobo Kanaeru
 					</h1>
 					<p class="hero-description">
-						A carefree girl from a lighthouse bloodline of powerful rain shamans
-						must regain her Rain Master title by proving her skills and adopting
-						a marketing strategy.
+						A carefree girl in a lighthouse's top room, heir to a powerful rain
+						shaman lineage, must prove her ability to sustain their service. She
+						needs daily training and modern marketing to regain her Rain Master
+						title.
 					</p>
 					<a href="#" class="btn-primary">ABOUT ME</a>
 				</div>
@@ -123,42 +126,45 @@
 				<div class="hero-quotes">
 					<p class="quote">
 						"「ボコボコボコボカナエルがお手伝いします、あなたの一日を輝かせるために私を輝かせてください、エヘ！」"
-						<span class="quote-author">- こぼ・かなえる</span>
+						<br />
+						<br />
+						<span class="quote-author">こぼ・かなえる</span>
 					</p>
 					<p class="quote">
-						"Bokobokobo Kobo Kanaeru at your service let me be your shine to
-						shine your day, EHE!"
-						<span class="quote-author">- Kobo Kanaeru</span>
+						"「ボコボコボコボカナエルがお手伝いします、あなたの一日を輝かせるために私を輝かせてください、エヘ！」"
+						<br />
+						<br />
+						<span class="quote-author">こぼ・かなえる</span>
 					</p>
 				</div>
 			</article>
 
 			<!-- <div class="stats">
-				<div class="stats-container">
-					<div class="stats-item">
-						<h3 class="stats-count">2.3M</h3>
-						<p class="stats-category">Youtube</p>
+					<div class="stats-container">
+						<div class="stats-item">
+							<h3 class="stats-count">2.3M</h3>
+							<p class="stats-category">Youtube</p>
+						</div>
+						<div class="stats-item">
+							<h3 class="stats-count">400K</h3>
+							<p class="stats-category">Instagram</p>
+						</div>
+						<div class="stats-item">
+							<h3 class="stats-count">10K</h3>
+							<p class="stats-category">Twitter</p>
+						</div>
+						<div class="stats-item">
+							<h3 class="stats-count">12K</h3>
+							<p class="stats-category">Facebook</p>
+						</div>
+						<div class="stats-item">
+							<h3 class="stats-count">132K</h3>
+							<p class="stats-category">Tiktok</p>
+						</div>
 					</div>
-					<div class="stats-item">
-						<h3 class="stats-count">400K</h3>
-						<p class="stats-category">Instagram</p>
-					</div>
-					<div class="stats-item">
-						<h3 class="stats-count">10K</h3>
-						<p class="stats-category">Twitter</p>
-					</div>
-					<div class="stats-item">
-						<h3 class="stats-count">12K</h3>
-						<p class="stats-category">Facebook</p>
-					</div>
-					<div class="stats-item">
-						<h3 class="stats-count">132K</h3>
-						<p class="stats-category">Tiktok</p>
-					</div>
-				</div>
-			</div> -->
+				</div> -->
 
-			<section class="skins">
+			<section id="skins" class="skins">
 				<h2 class="section-title">Skins</h2>
 				<article class="skins-container">
 					<div class="skins-wrapper">
@@ -202,9 +208,50 @@
 				</article>
 			</section>
 
-			<section>
+			<section id="music" class="music">
+				<h2 class="section-title">Music</h2>
+				<div class="music-container">
+					<div class="music-slider-item">
+						<div class="music-category">
+							<p class="music-category-item">Single</p>
+							<p class="music-category-item">Original</p>
+						</div>
+						<div class="music-description">
+							<h3 class="music-title">Mantra Hujan</h3>
+							<p class="music-release-date">12 May 2022</p>
+						</div>
+					</div>
+					<div class="music-slider-item">
+						<div class="music-category">
+							<p class="music-category-item">Single</p>
+							<p class="music-category-item">Original</p>
+						</div>
+						<div class="music-description">
+							<h3 class="music-title">Mantra Hujan</h3>
+							<p class="music-release-date">12 May 2022</p>
+						</div>
+					</div>
+					<div class="music-slider-item">
+						<div class="music-category">
+							<p class="music-category-item">Single</p>
+							<p class="music-category-item">Original</p>
+						</div>
+						<div class="music-description">
+							<h3 class="music-title">Mantra Hujan</h3>
+							<p class="music-release-date">12 May 2022</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- <section id="videos" class="videos">
+				<h2 class="section-title">Videos</h2>
 				<aside></aside>
 			</section>
+
+			<section id="data" class="data">
+				<h2 class="section-title">Data</h2>
+			</section> -->
 		</main>
 
 		<footer></footer>
