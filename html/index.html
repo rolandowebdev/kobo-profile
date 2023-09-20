@@ -35,27 +35,27 @@
 
 			<ul class="social-mobile">
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-youtube"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-twitter"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-instagram"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-facebook"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-tiktok"></i>
 					</a>
 				</li>
@@ -80,27 +80,27 @@
 
 				<ul class="social-list">
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-youtube"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-twitter"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-instagram"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-facebook"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-tiktok"></i>
 						</a>
 					</li>
@@ -217,8 +217,11 @@
 
 			<section id="music" class="music">
 				<h2 class="section-title">Music</h2>
+				<div id="new-released-container" class="new-released-container"></div>
 				<div class="swiper music-container">
 					<div id="swiper-wrapper" class="swiper-wrapper"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 				</div>
 			</section>
 
@@ -233,6 +236,7 @@
 		</main>
 
 		<footer></footer>
+
 		<script type="module">
 			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
@@ -240,7 +244,7 @@
 				speed: 800,
 				autoHeigth: true,
 				slidesPerView: 1,
-				spaceBetween: 20,
+				spaceBetween: 16,
 				breakpoints: {
 					840: {
 						slidesPerView: 2
@@ -248,6 +252,10 @@
 					1120: {
 						slidesPerView: 3
 					}
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
 				}
 			})
 		</script>

@@ -164,6 +164,14 @@
 	.skins-switcher .btn-switcher {
 		width: 62px;
 	}
+
+	.music .new-released-container {
+		flex-direction: row;
+	}
+
+	.new-released-container .music-slider-item {
+		height: 250px;
+	}
 }
 
 @media (min-width: 1000px) {
