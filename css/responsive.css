@@ -164,6 +164,14 @@
 	.skins-switcher .btn-switcher {
 		width: 62px;
 	}
+
+	.music .new-released-container {
+		flex-direction: row;
+	}
+
+	.new-released-container .music-slider-item {
+		height: 250px;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -226,5 +234,17 @@
 	.hero-quotes .quote,
 	.hero-intro .hero-description {
 		font-size: 1rem;
+	}
+
+	.videos .outer-container {
+		flex-direction: row;
+	}
+
+	.outer-container .videos-container {
+		width: 65%;
+	}
+
+	.outer-container .live-notification {
+		width: 35%;
 	}
 }

@@ -4,16 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Kobo Kanaeru</title>
+		<!-- swiper css -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 		<link rel="stylesheet" href="../css/main.css" />
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/responsive.css" />
-
+		<!-- swiper library -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
 			defer></script>
+		<!-- font awesome -->
 		<script
 			src="https://kit.fontawesome.com/703ffa6e35.js"
 			crossorigin="anonymous"
@@ -21,8 +24,8 @@
 		<script src="../js/script.js" defer></script>
 	</head>
 	<body>
+		<!-- mobile menu -->
 		<div class="blur"></div>
-
 		<div class="mobile-menu-container">
 			<ul class="mobile-menu">
 				<li class="nav-item"><a class="nav-link" href="#skins">Skins</a></li>
@@ -35,27 +38,27 @@
 
 			<ul class="social-mobile">
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-youtube"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-twitter"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-instagram"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-facebook"></i>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#">
+					<a href="#" target="_blank">
 						<i class="fa-brands fa-tiktok"></i>
 					</a>
 				</li>
@@ -80,27 +83,27 @@
 
 				<ul class="social-list">
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-youtube"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-twitter"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-instagram"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-facebook"></i>
 						</a>
 					</li>
 					<li class="social-item">
-						<a href="#">
+						<a href="#" target="_blank">
 							<i class="fa-brands fa-tiktok"></i>
 						</a>
 					</li>
@@ -146,33 +149,11 @@
 				</div>
 			</article>
 
-			<!-- <div class="stats">
-					<div class="stats-container">
-						<div class="stats-item">
-							<h3 class="stats-count">2.3M</h3>
-							<p class="stats-category">Youtube</p>
-						</div>
-						<div class="stats-item">
-							<h3 class="stats-count">400K</h3>
-							<p class="stats-category">Instagram</p>
-						</div>
-						<div class="stats-item">
-							<h3 class="stats-count">10K</h3>
-							<p class="stats-category">Twitter</p>
-						</div>
-						<div class="stats-item">
-							<h3 class="stats-count">12K</h3>
-							<p class="stats-category">Facebook</p>
-						</div>
-						<div class="stats-item">
-							<h3 class="stats-count">132K</h3>
-							<p class="stats-category">Tiktok</p>
-						</div>
-					</div>
-				</div> -->
-
 			<section id="skins" class="skins">
-				<h2 class="section-title">Skins</h2>
+				<h2 class="section-title">
+					<i class="fa-solid fa-umbrella"></i>Skins<i
+						class="fa-solid fa-umbrella"></i>
+				</h2>
 				<article class="skins-container">
 					<div class="skins-wrapper">
 						<div class="skins-switcher">
@@ -211,43 +192,111 @@
 							only does she have to train daily, but she also needs to adopt
 							some sort of virtual marketing strategy to succeed!
 						</p>
+						<div class="social-stats">
+							<div class="social-stats-item">
+								<i class="fa-brands fa-youtube"></i>
+								<p class="stats-count">2.2M</p>
+							</div>
+							<div class="social-stats-item">
+								<i class="fa-brands fa-instagram"></i>
+								<p class="stats-count">470K</p>
+							</div>
+							<div class="social-stats-item">
+								<i class="fa-brands fa-twitter"></i>
+								<p class="stats-count">74K</p>
+							</div>
+							<div class="social-stats-item">
+								<i class="fa-brands fa-facebook"></i>
+								<p class="stats-count">12K</p>
+							</div>
+							<div class="social-stats-item">
+								<i class="fa-brands fa-tiktok"></i>
+								<p class="stats-count">37K</p>
+							</div>
+						</div>
 					</div>
 				</article>
 			</section>
 
-			<section id="music" class="music">
-				<h2 class="section-title">Music</h2>
-				<div class="swiper music-container">
-					<div id="swiper-wrapper" class="swiper-wrapper"></div>
+			<section id="videos" class="videos">
+				<h2 class="section-title">
+					<i class="fa-solid fa-umbrella"></i>Videos<i
+						class="fa-solid fa-umbrella"></i>
+				</h2>
+				<div class="outer-container">
+					<div class="videos-container">
+						<div
+							id="highlights-video-container"
+							class="highlights-video-container"></div>
+						<div class="swiper videos-list-container">
+							<div id="video-list-wrapper" class="swiper-wrapper"></div>
+							<div class="swiper-button-prev swiper-button-prev-2"></div>
+							<div class="swiper-button-next swiper-button-next-2"></div>
+						</div>
+					</div>
+
+					<aside class="live-notification">
+						<h3 class="live-notification-title">Live Notification</h3>
+						<ul id="notification-container" class="notification-container"></ul>
+					</aside>
 				</div>
 			</section>
 
-			<!-- <section id="videos" class="videos">
-				<h2 class="section-title">Videos</h2>
-				<aside></aside>
+			<section id="music" class="music">
+				<h2 class="section-title">
+					<i class="fa-solid fa-umbrella"></i>Music<i
+						class="fa-solid fa-umbrella"></i>
+				</h2>
+				<div id="new-released-container" class="new-released-container"></div>
+				<div class="swiper music-list-container">
+					<div id="music-list-wrapper" class="swiper-wrapper"></div>
+					<div class="swiper-button-prev swiper-button-prev-1"></div>
+					<div class="swiper-button-next swiper-button-next-1"></div>
+				</div>
 			</section>
 
-			<section id="data" class="data">
+			<!-- <section id="data" class="data">
 				<h2 class="section-title">Data</h2>
 			</section> -->
 		</main>
 
 		<footer></footer>
+
 		<script type="module">
 			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 
-			const swiper = new Swiper('.music-container', {
+			const swiperMusic = new Swiper('.music-list-container', {
 				speed: 800,
 				autoHeigth: true,
 				slidesPerView: 1,
-				spaceBetween: 20,
+				spaceBetween: 16,
 				breakpoints: {
-					840: {
+					800: {
 						slidesPerView: 2
 					},
 					1120: {
 						slidesPerView: 3
 					}
+				},
+				navigation: {
+					nextEl: '.swiper-button-next-1',
+					prevEl: '.swiper-button-prev-1'
+				}
+			})
+
+			const swiperVideos = new Swiper('.videos-list-container', {
+				speed: 800,
+				autoHeigth: true,
+				slidesPerView: 1,
+				spaceBetween: 16,
+				breakpoints: {
+					800: {
+						slidesPerView: 2
+					}
+				},
+				navigation: {
+					nextEl: '.swiper-button-next-2',
+					prevEl: '.swiper-button-prev-2'
 				}
 			})
 		</script>
