@@ -235,4 +235,16 @@
 	.hero-intro .hero-description {
 		font-size: 1rem;
 	}
+
+	.videos .outer-container {
+		flex-direction: row;
+	}
+
+	.outer-container .videos-container {
+		width: 65%;
+	}
+
+	.outer-container .live-notification {
+		width: 35%;
+	}
 }
