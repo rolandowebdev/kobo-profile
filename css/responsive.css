@@ -182,7 +182,7 @@
 	.hero {
 		align-items: center;
 		background-image: url(../assets/hero-image.png);
-		background-size: calc(100vh - 20vh);
+		background-size: calc(100vh - 18vh);
 		background-position: 30vw;
 	}
 
@@ -220,7 +220,7 @@
 
 @media (min-width: 1280px) {
 	.hero {
-		background-position: 22vw;
+		background-position: 25vw;
 	}
 
 	.hero .hero-intro {
