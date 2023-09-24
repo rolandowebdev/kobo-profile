@@ -2,7 +2,6 @@ const blur = document.querySelector('.blur')
 const hamburger = document.querySelector('.hamburger')
 const mobileMenuContainer = document.querySelector('.mobile-menu-container')
 const image = document.getElementById('skins-image')
-const skinsWrapper = document.querySelector('.skins-image-wrapper')
 const header = document.querySelector('.header')
 
 const SKINS_NAME = {
@@ -12,7 +11,8 @@ const SKINS_NAME = {
 }
 
 const switchSkins = (skinName) => {
-	skinsWrapper.style.opacity = 0
+	image.style.opacity = 0
+
 	setTimeout(() => {
 		switch (skinName) {
 			case SKINS_NAME.ORIGINAl:
@@ -28,8 +28,9 @@ const switchSkins = (skinName) => {
 				console.log('Skin not found!')
 				break
 		}
-		skinsWrapper.style.opacity = 1
-	}, 300)
+
+		image.style.opacity = 1
+	}, 350)
 }
 
 const translateDate = (inputDateStr) => {

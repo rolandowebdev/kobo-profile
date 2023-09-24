@@ -1,10 +1,14 @@
 const musicListWrapper = document.getElementById('music-list-wrapper')
 const videoListWrapper = document.getElementById('video-list-wrapper')
 const newReleasedContainer = document.getElementById('new-released-container')
+const notificationContainer = document.getElementById('notification-container')
+const socialList = document.getElementById('social-list')
+const socialMobile = document.getElementById('social-mobile')
+const navMenu = document.getElementById('nav-menu')
+const mobileMenu = document.getElementById('mobile-menu')
 const highlightsVideoContainer = document.getElementById(
 	'highlights-video-container'
 )
-const notificationContainer = document.getElementById('notification-container')
 
 const newReleasedMusic = [
 	{
@@ -19,7 +23,7 @@ const newReleasedMusic = [
 		id: 2,
 		title: 'Princess Samurai',
 		releaseDate: '2023-03-07',
-		category: ['Single', 'Cover'],
+		category: ['Collab', 'Cover'],
 		coverImage: '../assets/music/princess-samurai.jpg',
 		link: 'https://www.youtube.com/watch?v=jkgaIFbdlpE'
 	}
@@ -149,20 +153,20 @@ const listNotification = [
 	},
 	{
 		id: 2,
-		title: 'Post Talk',
-		description: 'Talking about my new costume & donation reading',
-		coverImage: '../assets/videos/post-talk.jpg',
-		link: 'https://www.youtube.com/live/-yj-aWEK6do?si=rpKrL2cx-5_gUTLF',
-		date: 'Tod, 20:15'
-	},
-	{
-		id: 3,
 		title: 'New Costume Relay',
 		description:
 			'REVEAL SKIN BARU KOBO!!! JADI WAYANG? JADI PUTRI RAJA?? JADI-JADIAN???',
 		coverImage: '../assets/videos/new-costume-relay.jpg',
 		link: 'https://www.youtube.com/live/4CbH8pcq9C4?si=zv0GJiIaT9euOL_A',
-		date: 'Tom, 15:30'
+		date: 'Tod, 20:00'
+	},
+	{
+		id: 3,
+		title: 'Post Talk',
+		description: 'Talking about my new costume & donation reading',
+		coverImage: '../assets/videos/post-talk.jpg',
+		link: 'https://www.youtube.com/live/-yj-aWEK6do?si=rpKrL2cx-5_gUTLF',
+		date: 'Tod, 21:00'
 	},
 	{
 		id: 4,
@@ -181,6 +185,33 @@ const listNotification = [
 		coverImage: '../assets/videos/award-show.jpg',
 		link: 'https://www.youtube.com/live/WyGUWs8f_nU?si=wgSE2VDHlntYMDd9',
 		date: 'Tom, 21:30'
+	}
+]
+
+const socialIcons = [
+	'fa-youtube',
+	'fa-twitter',
+	'fa-instagram',
+	'fa-facebook',
+	'fa-tiktok'
+]
+
+const navItemName = [
+	{
+		id: 1,
+		name: 'Skins'
+	},
+	{
+		id: 2,
+		name: 'Videos'
+	},
+	{
+		id: 3,
+		name: 'Music'
+	},
+	{
+		id: 4,
+		name: 'Data'
 	}
 ]
 
@@ -298,5 +329,45 @@ notificationContainer.innerHTML = listNotification
 				</p>
 			</div>
 		</li>`
+	)
+	.join('')
+
+socialList.innerHTML = socialIcons
+	.map(
+		(icon) =>
+			`<li class="social-item">
+			<a href="#" target="_blank">
+				<i class="fa-brands ${icon}"></i>
+			</a>
+		</li>`
+	)
+	.join('')
+
+socialMobile.innerHTML = socialIcons
+	.map(
+		(icon) =>
+			`<li class="social-item">
+			<a href="#" target="_blank">
+				<i class="fa-brands ${icon}"></i>
+			</a>
+		</li>`
+	)
+	.join('')
+
+navMenu.innerHTML = navItemName
+	.map(
+		(item) =>
+			`<li class="nav-item"><a class="nav-link" href="#${item.name.toLowerCase()}">${
+				item.name
+			}</a></li>`
+	)
+	.join('')
+
+mobileMenu.innerHTML = navItemName
+	.map(
+		(item) =>
+			`<li class="nav-item"><a class="nav-link" href="#${item.name.toLowerCase()}">${
+				item.name
+			}</a></li>`
 	)
 	.join('')

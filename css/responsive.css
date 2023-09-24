@@ -210,7 +210,7 @@
 	}
 
 	.skins-wrapper .skins-image-wrapper {
-		height: 600px;
+		height: 580px;
 	}
 
 	.skins-switcher .btn-switcher {
@@ -220,7 +220,7 @@
 
 @media (min-width: 1280px) {
 	.hero {
-		background-position: 25vw;
+		background-position: 22vw;
 	}
 
 	.hero .hero-intro {
