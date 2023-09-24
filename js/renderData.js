@@ -6,6 +6,8 @@ const socialList = document.getElementById('social-list')
 const socialMobile = document.getElementById('social-mobile')
 const navMenu = document.getElementById('nav-menu')
 const mobileMenu = document.getElementById('mobile-menu')
+const socialStats = document.getElementById('social-stats')
+const dataContainer = document.getElementById('data-container')
 const holoIdGen1 = document.getElementById('holo-id-gen-1')
 const holoIdGen2 = document.getElementById('holo-id-gen-2')
 const holoIdGen3 = document.getElementById('holo-id-gen-3')
@@ -192,11 +194,11 @@ const listNotification = [
 ]
 
 const socialIcons = [
-	'fa-youtube',
-	'fa-twitter',
-	'fa-instagram',
-	'fa-facebook',
-	'fa-tiktok'
+	{ icon: 'fa-youtube', hover: 'fa-brands-youtube' },
+	{ icon: 'fa-twitter', hover: 'fa-brands-twitter' },
+	{ icon: 'fa-instagram', hover: 'fa-brands-instagram' },
+	{ icon: 'fa-facebook', hover: 'fa-brands-facebook' },
+	{ icon: 'fa-tiktok', hover: 'fa-brands-tiktok' }
 ]
 
 const navItemName = [
@@ -248,6 +250,65 @@ const holoIDMember = [
 	{ id: 7, name: 'Vestia Zeta', link: '' },
 	{ id: 8, name: 'Kaela Kovalskia', link: '' },
 	{ id: 9, name: 'Kobo Kanaeru', link: '' }
+]
+
+const socialStatsItem = [
+	{ id: 1, icon: 'fa-youtube', count: '2.2M' },
+	{ id: 2, icon: 'fa-instagram', count: '470K' },
+	{ id: 3, icon: 'fa-twitter', count: '74K' },
+	{ id: 4, icon: 'fa-facebook', count: '12K' },
+	{ id: 5, icon: 'fa-tiktok', count: '37K' }
+]
+
+const dataContainerItem = [
+	{
+		id: 1,
+		background: '../assets/data/birthday.jpg',
+		title: 'Birthday',
+		icon: 'fa-cake-candles',
+		description: '12 December',
+		link: '#'
+	},
+	{
+		id: 2,
+		background: '../assets/data/debut-stream.jpg',
+		title: 'Debut Stream',
+		icon: 'fa-youtube',
+		description: 'March 27, 2022',
+		link: '#'
+	},
+	{
+		id: 3,
+		background: '../assets/data/heigth.jpg',
+		title: 'Height',
+		icon: 'fa-person',
+		description: '150 CM',
+		link: '#'
+	},
+	{
+		id: 4,
+		background: '../assets/data/unit.jpg',
+		title: 'Unit',
+		icon: 'fa-building',
+		description: 'Hololive Indonesia',
+		link: 'https://www.hololive.id/'
+	},
+	{
+		id: 1,
+		background: '../assets/data/illustrator.jpg',
+		title: 'Illustrator',
+		icon: 'fa-pen-nib',
+		description: 'ぽんかん⑧',
+		link: 'https://twitter.com/ponkan_8'
+	},
+	{
+		id: 1,
+		background: '../assets/data/fan-name.jpg',
+		title: 'Fan Name',
+		icon: 'fa-feather',
+		description: 'Kobokan',
+		link: '#'
+	}
 ]
 
 newReleasedContainer.innerHTML = newReleasedMusic
@@ -372,7 +433,7 @@ socialList.innerHTML = socialIcons
 		(icon) =>
 			`<li class="social-item">
 			<a href="#" target="_blank">
-				<i class="fa-brands ${icon}"></i>
+				<i class="fa-brands ${icon.icon} ${icon.hover}"></i>
 			</a>
 		</li>`
 	)
@@ -383,7 +444,7 @@ socialMobile.innerHTML = socialIcons
 		(icon) =>
 			`<li class="social-item">
 			<a href="#" target="_blank">
-				<i class="fa-brands ${icon}"></i>
+				<i class="fa-brands ${icon.icon} ${icon.hover}"></i>
 			</a>
 		</li>`
 	)
@@ -404,6 +465,38 @@ mobileMenu.innerHTML = navItemName
 			`<li class="nav-item"><a class="nav-link" href="#${item.name.toLowerCase()}">${
 				item.name
 			}</a></li>`
+	)
+	.join('')
+
+socialStats.innerHTML = socialStatsItem
+	.map(
+		(social) =>
+			`<div class="social-stats-item">
+				<i class="fa-brands ${social.icon}"></i>
+				<p class="stats-count">${social.count}</p>
+			</div>`
+	)
+	.join('')
+
+dataContainer.innerHTML = dataContainerItem
+	.map(
+		(data) =>
+			`<div class="data-item">
+				<img
+					class="background-data"
+					src="${data.background}"
+					alt="Fan name" />
+				<div class="data-icon">
+					<i class="fa-solid ${data.icon}"></i>
+					<p class="data-title">${data.title}</p>
+				</div>
+				<a
+					href="${data.link}"
+					class="data-description"
+					target="_blank"
+					>${data.description}</a
+				>
+			</div>`
 	)
 	.join('')
 
