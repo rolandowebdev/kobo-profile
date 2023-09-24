@@ -6,6 +6,9 @@ const socialList = document.getElementById('social-list')
 const socialMobile = document.getElementById('social-mobile')
 const navMenu = document.getElementById('nav-menu')
 const mobileMenu = document.getElementById('mobile-menu')
+const holoIdGen1 = document.getElementById('holo-id-gen-1')
+const holoIdGen2 = document.getElementById('holo-id-gen-2')
+const holoIdGen3 = document.getElementById('holo-id-gen-3')
 const highlightsVideoContainer = document.getElementById(
 	'highlights-video-container'
 )
@@ -215,6 +218,38 @@ const navItemName = [
 	}
 ]
 
+const holoIDMember = [
+	{
+		id: 1,
+		name: 'Ayunda Risu',
+		link: ''
+	},
+	{
+		id: 2,
+		name: 'Moona Hoshinova',
+		link: ''
+	},
+	{
+		id: 3,
+		name: 'Airani Iofifteen',
+		link: ''
+	},
+	{
+		id: 4,
+		name: 'Kureiji Ollie',
+		link: ''
+	},
+	{
+		id: 5,
+		name: 'Anya Melfissa',
+		link: ''
+	},
+	{ id: 6, name: 'Povolia Reine', link: '' },
+	{ id: 7, name: 'Vestia Zeta', link: '' },
+	{ id: 8, name: 'Kaela Kovalskia', link: '' },
+	{ id: 9, name: 'Kobo Kanaeru', link: '' }
+]
+
 newReleasedContainer.innerHTML = newReleasedMusic
 	.map(
 		(music) =>
@@ -369,5 +404,35 @@ mobileMenu.innerHTML = navItemName
 			`<li class="nav-item"><a class="nav-link" href="#${item.name.toLowerCase()}">${
 				item.name
 			}</a></li>`
+	)
+	.join('')
+
+holoIdGen1.innerHTML = holoIDMember
+	.slice(0, 3)
+	.map(
+		(member) =>
+			`<li class="member-footer-item">
+			<a href="${member.link}" target="_blank">${member.name}</a>
+		</li>`
+	)
+	.join('')
+
+holoIdGen2.innerHTML = holoIDMember
+	.slice(3, 6)
+	.map(
+		(member) =>
+			`<li class="member-footer-item">
+			<a href="${member.link}" target="_blank">${member.name}</a>
+		</li>`
+	)
+	.join('')
+
+holoIdGen3.innerHTML = holoIDMember
+	.slice(6, 9)
+	.map(
+		(member) =>
+			`<li class="member-footer-item">
+			<a href="${member.link}" target="_blank">${member.name}</a>
+		</li>`
 	)
 	.join('')

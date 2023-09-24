@@ -1,9 +1,22 @@
 @media (min-width: 440px) {
+	.section-title {
+		font-size: 3rem;
+	}
+
 	.hero {
 		background-image: url(../assets/icon.png);
 		background-position: bottom right;
 		background-size: calc(100vh - 70vh);
 		background-repeat: no-repeat;
+	}
+
+	.notification-container .notification-item {
+		flex-direction: row;
+	}
+
+	.live-notification .notification-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
 }
 
@@ -66,6 +79,12 @@
 	.skins-info-wrapper .skins-info-title > span,
 	.skins-info-wrapper .skins-info-description {
 		font-size: 1rem;
+	}
+
+	.data .data-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1rem;
 	}
 }
 

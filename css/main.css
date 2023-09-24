@@ -48,7 +48,7 @@
 	gap: 8px;
 	text-align: center;
 	font-weight: 800;
-	font-size: 3rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	color: var(--primary-color);
@@ -463,14 +463,14 @@
 }
 
 .live-notification .notification-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-	gap: 1.2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 .notification-container .notification-item {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	gap: 12px;
 }
 
@@ -493,9 +493,9 @@
 }
 
 .notification-item .notification-text {
+	flex-direction: column;
 	flex-shrink: 8;
 	display: flex;
-	flex-direction: column;
 	gap: 4px;
 }
 
@@ -537,16 +537,16 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	margin-bottom: 4rem;
 }
 
 .data .data-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
 }
 
 .data-container .data-item {
+	width: 100%;
 	position: relative;
 	padding: 1rem;
 	height: 180px;
@@ -601,6 +601,73 @@
 	font-weight: 800;
 	color: var(--background-color);
 	z-index: 1;
+}
+
+.data-item > a:hover {
+	text-decoration: underline;
+}
+
+/* footer */
+
+.footer {
+	padding: 2rem;
+	margin-top: 7.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+}
+
+.footer-content-container .terms-list {
+	display: none;
+}
+
+.footer .footer-item-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 4rem;
+}
+
+.footer-item-container .footer-item {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.footer-item .footer-list-item {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer-item .footer-item-title {
+	font-weight: 800;
+}
+
+.footer-list-item .member-footer-item {
+	cursor: pointer;
+	width: fit-content;
+}
+
+.footer-item .member-footer-item:hover {
+	text-decoration: underline;
+}
+
+.member-footer-item > a {
+	font-weight: 400;
+}
+
+.footer .terms-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.terms-list .terms-item {
+	font-size: 14px;
+	font-weight: 600;
 }
 
 /* customizing swiper button */
