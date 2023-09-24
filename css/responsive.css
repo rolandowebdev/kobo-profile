@@ -6,7 +6,7 @@
 	.hero {
 		background-image: url(../assets/icon.png);
 		background-position: bottom right;
-		background-size: calc(100vh - 70vh);
+		background-size: calc(100vh - 65vh);
 		background-repeat: no-repeat;
 	}
 
@@ -21,10 +21,6 @@
 }
 
 @media (min-width: 540px) {
-	.hero {
-		background-size: calc(100vh - 65vh);
-	}
-
 	.hero-intro .hero-title {
 		font-size: 58px;
 	}
@@ -55,6 +51,10 @@
 		margin-inline: auto;
 	}
 
+	.skins .skins-wrapper {
+		flex-direction: row;
+	}
+
 	.skins-container .skins-wrapper {
 		display: flex;
 		justify-content: center;
@@ -62,6 +62,10 @@
 
 	.skins-wrapper .skins-switcher {
 		flex-direction: column;
+	}
+
+	.skins-switcher .btn-switcher:nth-child(3)::before {
+		right: 15%;
 	}
 
 	.skins-switcher .btn-switcher {
@@ -116,7 +120,7 @@
 		align-items: flex-start;
 		gap: 2rem;
 		background-image: url(../assets/icon.png);
-		background-size: calc(100vh - 40vh);
+		background-size: calc(100vh - 45vh);
 		background-position: right bottom;
 	}
 
@@ -134,17 +138,17 @@
 	}
 
 	.hero .hero-quotes {
+		width: 35vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 1rem;
-		width: 35vw;
+		gap: 14px;
 	}
 
 	.hero-quotes .quote {
 		font-size: 14px;
 		font-weight: 500;
-		line-height: 24px;
+		line-height: 22px;
 		border-left: 2px solid var(--primary-color);
 		padding-left: 8px;
 	}
@@ -171,17 +175,12 @@
 		width: 50vw;
 	}
 
-	.skins-wrapper .skins-switcher {
-		flex-direction: column;
-		gap: 1rem;
-	}
-
 	.skins-wrapper .skins-image-wrapper {
 		margin-inline: auto;
 	}
 
-	.skins-switcher .btn-switcher {
-		width: 62px;
+	.skins-switcher .btn-switcher:nth-child(3)::before {
+		right: 9%;
 	}
 
 	.music .new-released-container {
@@ -202,7 +201,7 @@
 		align-items: center;
 		background-image: url(../assets/hero-image.png);
 		background-size: calc(100vh - 18vh);
-		background-position: 30vw;
+		background-position: 28vw;
 	}
 
 	.hero .hero-intro {
@@ -232,14 +231,14 @@
 		height: 580px;
 	}
 
-	.skins-switcher .btn-switcher {
-		width: 68px;
+	.skins-switcher .btn-switcher:nth-child(3)::before {
+		right: 11%;
 	}
 }
 
 @media (min-width: 1280px) {
 	.hero {
-		background-position: 22vw;
+		background-position: 24vw;
 	}
 
 	.hero .hero-intro {

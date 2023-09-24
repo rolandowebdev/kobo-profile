@@ -2,6 +2,7 @@ const musicListWrapper = document.getElementById('music-list-wrapper')
 const videoListWrapper = document.getElementById('video-list-wrapper')
 const newReleasedContainer = document.getElementById('new-released-container')
 const notificationContainer = document.getElementById('notification-container')
+const highlightsVideoContainer = document.getElementById('highlights-container')
 const socialList = document.getElementById('social-list')
 const socialMobile = document.getElementById('social-mobile')
 const navMenu = document.getElementById('nav-menu')
@@ -11,9 +12,6 @@ const dataContainer = document.getElementById('data-container')
 const holoIdGen1 = document.getElementById('holo-id-gen-1')
 const holoIdGen2 = document.getElementById('holo-id-gen-2')
 const holoIdGen3 = document.getElementById('holo-id-gen-3')
-const highlightsVideoContainer = document.getElementById(
-	'highlights-video-container'
-)
 
 const newReleasedMusic = [
 	{
