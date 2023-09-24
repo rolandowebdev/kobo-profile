@@ -194,11 +194,31 @@ const listNotification = [
 ]
 
 const socialIcons = [
-	{ icon: 'fa-youtube', hover: 'fa-brands-youtube' },
-	{ icon: 'fa-twitter', hover: 'fa-brands-twitter' },
-	{ icon: 'fa-instagram', hover: 'fa-brands-instagram' },
-	{ icon: 'fa-facebook', hover: 'fa-brands-facebook' },
-	{ icon: 'fa-tiktok', hover: 'fa-brands-tiktok' }
+	{
+		icon: 'fa-youtube',
+		hover: 'fa-brands-youtube',
+		link: 'https://www.youtube.com/@KoboKanaeru'
+	},
+	{
+		icon: 'fa-twitter',
+		hover: 'fa-brands-twitter',
+		link: 'https://twitter.com/kobokanaeru'
+	},
+	{
+		icon: 'fa-instagram',
+		hover: 'fa-brands-instagram',
+		link: 'https://www.instagram.com/kobokanaeru'
+	},
+	{
+		icon: 'fa-facebook',
+		hover: 'fa-brands-facebook',
+		link: 'https://www.facebook.com/KoboKanaeru'
+	},
+	{
+		icon: 'fa-tiktok',
+		hover: 'fa-brands-tiktok',
+		link: 'https://www.tiktok.com/@kobokanaeru'
+	}
 ]
 
 const navItemName = [
@@ -224,40 +244,81 @@ const holoIDMember = [
 	{
 		id: 1,
 		name: 'Ayunda Risu',
-		link: ''
+		link: 'https://hololive.hololivepro.com/en/talents/ayunda-risu/'
 	},
 	{
 		id: 2,
 		name: 'Moona Hoshinova',
-		link: ''
+		link: 'https://hololive.hololivepro.com/en/talents/moona-hoshinova/'
 	},
 	{
 		id: 3,
 		name: 'Airani Iofifteen',
-		link: ''
+		link: 'https://hololive.hololivepro.com/en/talents/airani-iofifteen/'
 	},
 	{
 		id: 4,
 		name: 'Kureiji Ollie',
-		link: ''
+		link: 'https://hololive.hololivepro.com/en/talents/kureiji-ollie/'
 	},
 	{
 		id: 5,
 		name: 'Anya Melfissa',
-		link: ''
+		link: 'https://hololive.hololivepro.com/en/talents/anya-melfissa/'
 	},
-	{ id: 6, name: 'Povolia Reine', link: '' },
-	{ id: 7, name: 'Vestia Zeta', link: '' },
-	{ id: 8, name: 'Kaela Kovalskia', link: '' },
-	{ id: 9, name: 'Kobo Kanaeru', link: '' }
+	{
+		id: 6,
+		name: 'Povolia Reine',
+		link: 'https://hololive.hololivepro.com/en/talents/pavolia-reine/'
+	},
+	{
+		id: 7,
+		name: 'Vestia Zeta',
+		link: 'https://hololive.hololivepro.com/en/talents/vestia-zeta/'
+	},
+	{
+		id: 8,
+		name: 'Kaela Kovalskia',
+		link: 'https://hololive.hololivepro.com/en/talents/kaela-kovalskia/'
+	},
+	{
+		id: 9,
+		name: 'Kobo Kanaeru',
+		link: 'https://hololive.hololivepro.com/en/talents/kobo-kanaeru/'
+	}
 ]
 
 const socialStatsItem = [
-	{ id: 1, icon: 'fa-youtube', count: '2.2M' },
-	{ id: 2, icon: 'fa-instagram', count: '470K' },
-	{ id: 3, icon: 'fa-twitter', count: '74K' },
-	{ id: 4, icon: 'fa-facebook', count: '12K' },
-	{ id: 5, icon: 'fa-tiktok', count: '37K' }
+	{
+		id: 1,
+		icon: 'fa-youtube',
+		count: '2.2M',
+		link: 'https://www.youtube.com/@KoboKanaeru'
+	},
+	{
+		id: 2,
+		icon: 'fa-instagram',
+		count: '494K',
+		link: 'https://www.instagram.com/kobokanaeru'
+	},
+	{
+		id: 3,
+		icon: 'fa-twitter',
+		count: '541K',
+		link: 'https://twitter.com/kobokanaeru'
+	},
+	{
+		id: 4,
+		icon: 'fa-facebook',
+		count: '14K',
+		link: 'https://www.facebook.com/KoboKanaeru'
+	},
+	{
+		id: 5,
+		icon: 'fa-tiktok',
+		count: '821K',
+		link: 'https://www.tiktok.com/@kobokanaeru'
+	}
 ]
 
 const dataContainerItem = [
@@ -432,7 +493,7 @@ socialList.innerHTML = socialIcons
 	.map(
 		(icon) =>
 			`<li class="social-item">
-			<a href="#" target="_blank">
+			<a href="${icon.link}" target="_blank">
 				<i class="fa-brands ${icon.icon} ${icon.hover}"></i>
 			</a>
 		</li>`
@@ -443,7 +504,7 @@ socialMobile.innerHTML = socialIcons
 	.map(
 		(icon) =>
 			`<li class="social-item">
-			<a href="#" target="_blank">
+			<a href="${icon.link}" target="_blank">
 				<i class="fa-brands ${icon.icon} ${icon.hover}"></i>
 			</a>
 		</li>`
@@ -471,10 +532,10 @@ mobileMenu.innerHTML = navItemName
 socialStats.innerHTML = socialStatsItem
 	.map(
 		(social) =>
-			`<div class="social-stats-item">
+			`<a href="${social.link}" class="social-stats-item" target="_blank">
 				<i class="fa-brands ${social.icon}"></i>
 				<p class="stats-count">${social.count}</p>
-			</div>`
+			</a>`
 	)
 	.join('')
 
@@ -490,12 +551,11 @@ dataContainer.innerHTML = dataContainerItem
 					<i class="fa-solid ${data.icon}"></i>
 					<p class="data-title">${data.title}</p>
 				</div>
-				<a
-					href="${data.link}"
-					class="data-description"
-					target="_blank"
-					>${data.description}</a
-				>
+				${
+					data.link === '#'
+						? `<p class="data-description">${data.description}</p>`
+						: `<a href="${data.link}" class="data-description" target="_blank">${data.description}</a>`
+				}
 			</div>`
 	)
 	.join('')

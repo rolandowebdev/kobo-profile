@@ -70,6 +70,19 @@
 	background-color: var(--secondary-color);
 }
 
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 800;
+	color: var(--primary-color);
+	transition: 0.25s ease-in-out;
+}
+
+.logo:hover {
+	color: var(--secondary-color);
+}
+
 /* header */
 
 .header {
@@ -115,19 +128,6 @@
 
 .nav-item .nav-link:hover::after {
 	min-width: 100%;
-}
-
-.navbar .logo {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	font-weight: 800;
-	color: var(--primary-color);
-	transition: 0.25s ease-in-out;
-}
-
-.navbar .logo:hover {
-	color: var(--secondary-color);
 }
 
 .header .navbar .nav-menu,
@@ -265,7 +265,7 @@
 .skins {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .skins-wrapper .skins-switcher {
@@ -333,14 +333,11 @@
 	color: var(--background-color);
 	border-radius: 6px;
 	transition: 0.3s ease-in-out;
+	cursor: pointer;
 }
 
 .social-stats .social-stats-item:hover {
 	background-color: var(--secondary-color);
-}
-
-.social-stats-item > * {
-	cursor: default;
 }
 
 .social-stats-item > .fa-brands {
@@ -362,8 +359,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-	margin-top: 2rem;
-	margin-bottom: 1rem;
+	margin: 3rem 0 1rem 0;
 }
 
 .new-released-container .card-item {
@@ -451,7 +447,7 @@
 .videos {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .videos .outer-container {
@@ -562,7 +558,7 @@
 .data {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .data .data-container {
