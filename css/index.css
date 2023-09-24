@@ -70,7 +70,7 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 5rem;
+	gap: 7.5rem;
 	width: 100%;
 	max-width: 72rem;
 	margin-inline: auto;

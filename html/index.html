@@ -22,47 +22,14 @@
 			crossorigin="anonymous"
 			defer></script>
 		<script src="../js/script.js" defer></script>
+		<script src="../js/renderData.js" defer></script>
 	</head>
 	<body>
-		<!-- mobile menu -->
 		<div class="blur"></div>
 		<div class="mobile-menu-container">
-			<ul class="mobile-menu">
-				<li class="nav-item"><a class="nav-link" href="#skins">Skins</a></li>
-				<li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
-				<li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
-				<li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
-			</ul>
-
+			<ul id="mobile-menu" class="mobile-menu"></ul>
 			<hr />
-
-			<ul class="social-mobile">
-				<li class="nav-item">
-					<a href="#" target="_blank">
-						<i class="fa-brands fa-youtube"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" target="_blank">
-						<i class="fa-brands fa-twitter"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" target="_blank">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" target="_blank">
-						<i class="fa-brands fa-facebook"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" target="_blank">
-						<i class="fa-brands fa-tiktok"></i>
-					</a>
-				</li>
-			</ul>
+			<ul id="social-mobile" class="social-mobile"></ul>
 		</div>
 
 		<header class="header">
@@ -72,42 +39,8 @@
 					<span>こぼ・かなえる</span>
 				</a>
 
-				<ul class="nav-menu">
-					<li class="nav-item"><a class="nav-link" href="#skins">Skins</a></li>
-					<li class="nav-item"><a class="nav-link" href="#music">Music</a></li>
-					<li class="nav-item">
-						<a class="nav-link" href="#videos">Videos</a>
-					</li>
-					<li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
-				</ul>
-
-				<ul class="social-list">
-					<li class="social-item">
-						<a href="#" target="_blank">
-							<i class="fa-brands fa-youtube"></i>
-						</a>
-					</li>
-					<li class="social-item">
-						<a href="#" target="_blank">
-							<i class="fa-brands fa-twitter"></i>
-						</a>
-					</li>
-					<li class="social-item">
-						<a href="#" target="_blank">
-							<i class="fa-brands fa-instagram"></i>
-						</a>
-					</li>
-					<li class="social-item">
-						<a href="#" target="_blank">
-							<i class="fa-brands fa-facebook"></i>
-						</a>
-					</li>
-					<li class="social-item">
-						<a href="#" target="_blank">
-							<i class="fa-brands fa-tiktok"></i>
-						</a>
-					</li>
-				</ul>
+				<ul id="nav-menu" class="nav-menu"></ul>
+				<ul id="social-list" class="social-list"></ul>
 
 				<div class="hamburger">
 					<span class="bar"></span>
@@ -236,7 +169,9 @@
 					</div>
 
 					<aside class="live-notification">
-						<h3 class="live-notification-title">Live Notification</h3>
+						<h3 class="live-notification-title">
+							<i class="fa-brands fa-youtube"></i> Live Notification
+						</h3>
 						<ul id="notification-container" class="notification-container"></ul>
 					</aside>
 				</div>
@@ -255,9 +190,85 @@
 				</div>
 			</section>
 
-			<!-- <section id="data" class="data">
-				<h2 class="section-title">Data</h2>
-			</section> -->
+			<section id="data" class="data">
+				<h2 class="section-title">
+					<i class="fa-solid fa-umbrella"></i>Data<i
+						class="fa-solid fa-umbrella"></i>
+				</h2>
+				<div class="data-container">
+					<div class="data-item">
+						<img
+							class="background-data"
+							src="../assets/data/birthday.jpg"
+							alt="Birthday" />
+						<div class="data-icon">
+							<i class="fa-solid fa-cake-candles"></i>
+							<p class="data-title">Birthday</p>
+						</div>
+						<div class="data-description">12 December</div>
+					</div>
+					<div class="data-item">
+						<img
+							class="background-data"
+							src="../assets/data/debut-stream.jpg"
+							alt="Debut stream" />
+						<div class="data-icon">
+							<i class="fa-brands fa-youtube"></i>
+							<p class="data-title">Debut Stream</p>
+						</div>
+						<div class="data-description">March 27, 2022</div>
+					</div>
+					<div class="data-item">
+						<img
+							class="background-data"
+							src="../assets/data/heigth.jpg"
+							alt="Height" />
+						<div class="data-icon">
+							<i class="fa-solid fa-person"></i>
+							<p class="data-title">Height</p>
+						</div>
+						<div class="data-description">150 CM</div>
+					</div>
+					<div class="data-item">
+						<img
+							class="background-data"
+							src="../assets/data/unit.jpg"
+							alt="Unit" />
+						<div class="data-icon">
+							<i class="fa-solid fa-building"></i>
+							<p class="data-title">Unit</p>
+						</div>
+						<div class="data-description">Hololive Indonesia</div>
+					</div>
+					<div class="data-item">
+						<img
+							class="background-data"
+							src="../assets/data/illustrator.jpg"
+							alt="Illustrator" />
+						<div class="data-icon">
+							<i class="fa-solid fa-pen-nib"></i>
+							<p class="data-title">Illustrator</p>
+						</div>
+						<a
+							href="https://twitter.com/ponkan_8"
+							class="data-description"
+							target="_blank"
+							>ぽんかん⑧</a
+						>
+					</div>
+					<div class="data-item">
+						<img
+							class="background-data"
+							src="../assets/data/fan-name.jpg"
+							alt="Fan name" />
+						<div class="data-icon">
+							<i class="fa-solid fa-feather"></i>
+							<p class="data-title">Fan Name</p>
+						</div>
+						<div class="data-description">Kobokan</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer></footer>
