@@ -13,13 +13,13 @@
 	--tiktok-color: #000000;
 	--facebook-color: #1877f2;
 
-	--border-radius: 6px;
+	--border-radius: 0.375rem;
 }
 
 /* additional class */
 
 .fa-brands {
-	font-size: 18px;
+	font-size: 1.125rem;
 	transition: 0.2s ease-in-out;
 }
 
@@ -47,7 +47,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	gap: 0.5rem;
 	text-align: center;
 	font-weight: 800;
 	font-size: 2rem;
@@ -99,8 +99,8 @@
 	width: 100%;
 	max-width: 72rem;
 	margin-inline: auto;
-	min-height: 72px;
-	padding-inline: 1.5rem;
+	min-height: 4.5rem;
+	padding-inline: 2rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -161,7 +161,7 @@
 	left: 50%;
 	position: fixed;
 	transform: translate(-50%, -50%);
-	max-width: 300px;
+	max-width: 18.75rem;
 	width: 80%;
 	padding: 1rem;
 	text-align: center;
@@ -200,7 +200,7 @@
 	display: block;
 	cursor: pointer;
 	border-radius: var(--border-radius);
-	padding: 4px 7px;
+	padding: 0.25rem 0.5rem;
 	transition: 0.4s ease-in-out;
 }
 
@@ -236,7 +236,7 @@
 .hero {
 	display: flex;
 	margin-top: 1rem;
-	height: calc(100vh - 88px);
+	height: calc(100vh - 5.5rem);
 	justify-content: space-between;
 	flex-direction: column;
 }
@@ -248,14 +248,14 @@
 }
 
 .hero-intro .hero-title {
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: 800;
 	text-transform: uppercase;
 }
 
 .hero-intro .hero-description {
 	font-size: 1rem;
-	line-height: 32px;
+	line-height: 2rem;
 }
 
 .hero .hero-quotes {
@@ -285,7 +285,7 @@
 
 .skins-switcher .btn-switcher {
 	position: relative;
-	width: 64px;
+	width: 4rem;
 }
 
 .skins-switcher .btn-switcher:nth-child(1)::before {
@@ -298,7 +298,6 @@
 
 .skins-switcher .btn-switcher:nth-child(3)::before {
 	content: 'Batik';
-	right: 9%;
 }
 
 .skins-switcher .btn-switcher:nth-child(1)::before,
@@ -306,12 +305,16 @@
 .skins-switcher .btn-switcher:nth-child(3)::before {
 	position: absolute;
 	top: -20px;
-	font-size: 14px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: fit-content;
+	font-size: 0.875rem;
 	font-weight: 600;
 	background-color: var(--primary-color);
 	color: var(--background-color);
 	border-radius: var(--border-radius);
-	padding: 4px 8px;
+	padding: 0.25rem 0.5rem;
 	opacity: 0;
 	transition: all 0.5s ease;
 }
@@ -361,13 +364,13 @@
 .skins-info-wrapper .skins-info-title > span,
 .skins-info-wrapper .skins-info-description {
 	font-size: 0.875rem;
-	line-height: 32px;
+	line-height: 2rem;
 }
 
 .skins-info-wrapper .social-stats {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-	gap: 12px;
+	grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+	gap: 0.75rem;
 }
 
 .social-stats .social-stats-item {
@@ -375,9 +378,9 @@
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	gap: 8px;
+	gap: 0.5rem;
 	font-size: 1rem;
-	padding: 12px;
+	padding: 0.75rem;
 	background-color: var(--primary-color);
 	color: var(--background-color);
 	border-radius: var(--border-radius);
@@ -401,7 +404,7 @@
 
 .music .music-list-container {
 	width: 100%;
-	height: 220px;
+	height: 13.75rem;
 }
 
 .music .new-released-container {
@@ -413,7 +416,7 @@
 
 .new-released-container .card-item {
 	width: 100%;
-	height: 220px;
+	height: 13.75rem;
 }
 
 /* Card Style */
@@ -456,7 +459,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
-	margin-left: 14px;
+	margin-left: 0.875rem;
 	width: fit-content;
 }
 
@@ -479,15 +482,15 @@
 	display: flex;
 	align-items: center;
 	gap: 8px;
-	margin-inline: 14px;
-	margin-bottom: 14px;
+	margin-inline: 0.875rem;
+	margin-bottom: 0.875rem;
 }
 
 .card-category .card-category-item {
 	padding: 6px 14px;
 	background-color: var(--background-color);
 	color: var(--dark-color);
-	font-size: 12px;
+	font-size: 0.75rem;
 	border-radius: 100vh;
 }
 
@@ -507,7 +510,7 @@
 
 .videos-container .videos-list-container {
 	width: 100%;
-	height: 220px;
+	height: 13.75rem;
 }
 
 .videos-container .highlights-container {
@@ -516,11 +519,11 @@
 
 .highlights-container .card-item {
 	width: 100%;
-	height: 220px;
+	height: 13.75rem;
 }
 
 .live-notification .live-notification-title {
-	padding: 8px;
+	padding: 0.5rem;
 	margin-bottom: 1rem;
 	font-size: 1rem;
 	font-weight: 800;
@@ -529,8 +532,8 @@
 	letter-spacing: 1px;
 	background-color: var(--primary-color);
 	color: var(--background-color);
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
 }
 
 .live-notification .notification-container {
@@ -542,12 +545,12 @@
 .notification-container .notification-item {
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 0.75rem;
 }
 
 .notification-item .notification-image {
-	height: 62px;
-	width: 98px;
+	height: 3.875rem;
+	width: 6.125rem;
 	aspect-ratio: 1 / 1;
 	box-shadow: 0px 0px 8px 0px rgba(23, 23, 23, 0.44);
 	-webkit-box-shadow: 0px 0px 8px 0px rgba(23, 23, 23, 0.44);
@@ -567,13 +570,14 @@
 	flex-direction: column;
 	flex-shrink: 8;
 	display: flex;
-	gap: 4px;
+	gap: 0.25rem;
 }
 
 .notification-text .notification-text-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	gap: 6px;
+	gap: 0.375rem;
 }
 
 .notification-text-wrapper .notification-link {
@@ -587,9 +591,9 @@
 }
 
 .notification-text-wrapper > time {
-	padding-block: 2px;
-	padding-inline: 8px;
-	font-size: 10px;
+	padding-block: 0.125rem;
+	padding-inline: 0.5rem;
+	font-size: 0.625rem;
 	font-weight: 600;
 	color: var(--background-color);
 	background-color: var(--dark-color);
@@ -597,8 +601,8 @@
 }
 
 .notification-text > p {
-	font-size: 13px;
-	line-height: 20px;
+	font-size: 0.813rem;
+	line-height: 1.25rem;
 	text-transform: lowercase;
 }
 
@@ -620,7 +624,7 @@
 	width: 100%;
 	position: relative;
 	padding: 1rem;
-	height: 180px;
+	height: 11.25rem;
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
@@ -655,8 +659,8 @@
 .data-item .data-icon {
 	display: flex;
 	align-items: center;
-	gap: 8px;
-	padding-right: 12px;
+	gap: 0.5rem;
+	padding-right: 0.75rem;
 	font-weight: 800;
 	filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
 		drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
@@ -713,7 +717,7 @@
 .footer-item .footer-list-item {
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 0.75rem;
 }
 
 .footer-item .footer-item-title {
@@ -741,7 +745,7 @@
 }
 
 .terms-list .terms-item {
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 600;
 }
 
@@ -750,8 +754,8 @@
 .swiper-button-next,
 .swiper-button-prev {
 	top: 15%;
-	height: 80px;
-	width: 35px;
+	height: 5rem;
+	width: 2.188rem;
 	background-color: var(--background-color);
 	border-radius: 100vh;
 	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
