@@ -34,21 +34,23 @@
 		</div>
 
 		<header class="header">
-			<nav class="navbar max-w-6xl">
+			<div class="header-container">
 				<a href="#hero" class="logo">
 					<img src="assets/icon.png" width="38" height="38" alt="" />
-					<span>こぼ・かなえる</span>
+					<p>こぼ・かなえる</p>
 				</a>
 
-				<ul id="nav-menu" class="nav-menu"></ul>
-				<ul id="social-list" class="social-list"></ul>
+				<nav class="navbar max-w-6xl">
+					<ul id="nav-menu" class="nav-menu"></ul>
+					<ul id="social-list" class="social-list"></ul>
+				</nav>
 
 				<div class="hamburger">
 					<span class="bar"></span>
 					<span class="bar"></span>
 					<span class="bar"></span>
 				</div>
-			</nav>
+			</div>
 		</header>
 
 		<main>
@@ -146,9 +148,11 @@
 					</div>
 
 					<aside class="live-notification">
-						<h3 class="live-notification-title">
-							<i class="fa-brands fa-youtube"></i> Live Notification
-						</h3>
+						<header class="header-notification">
+							<img src="assets/icon.png" alt="Kobo Kanaeru" />
+							<h3 class="live-notification-title">Live Notification</h3>
+							<img src="assets/icon.png" alt="Kobo Kanaeru" />
+						</header>
 
 						<ul id="notification-container" class="notification-container"></ul>
 					</aside>
